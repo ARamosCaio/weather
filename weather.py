@@ -23,7 +23,7 @@ def get_coordinates(city_name, state_code, country_code, API_KEY):
 
 def get_current_weather(lat, lon, api_key):
     # sourcery skip: inline-immediately-returned-variable
-    response = requests.get(f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}&units=metric').json()
+    response = requests.get(f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}&units=metric&lang=pt_br').json()
     data = WeatherData(
         main=response.get('weather')[0].get('main'),
         description=response.get('weather')[0].get('description'),
