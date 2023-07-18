@@ -36,3 +36,5 @@ After that, install the required packages:
 pip install -r requirements.txt
 ```
 ## What I've Learned
+
+- How to creat a django app
